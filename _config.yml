@@ -5,26 +5,32 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-theme                    : "minimal-mistakes-jekyll"
+# Theme Settings
+#
+# Review documentation to determine if you should use `theme` or `remote_theme`
+# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
+
+# theme                  : "minimal-mistakes-jekyll"
+# remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
 title                    : "구름이의 개발자 노트"
 title_separator          : "-"
-subtitle                 : "Development Test Site"
+subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Min-cloud0421"
 description              : "컴퓨터공학과 대학생의 공부 기록"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/test"
+baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/apple-touch-icon.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : "Custom Title" # overrides the website title displayed in the masthead, use " " for no title
+logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "utterances", "giscus", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -47,73 +53,81 @@ comments:
   staticman:
     branch               : # "master"
     endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+reCaptcha:
+  siteKey                :
+  secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
+  hide                   : # true, false (default)
 search                   : true # true, false (default)
 search_full_content      : true # true, false (default)
-search_provider          : "lunr"
+search_provider          : # lunr (default), algolia, google
 lunr:
-  search_within_pages    : true
+  search_within_pages    : # true, false (default)
 algolia:
-  application_id         : "QB6HVGBSBA"
-  index_name             : "dev_minimal-mistakes"
-  search_only_api_key    : "9d5014e5bbc77372547bce778dfa5663"
-  powered_by             : true
-
+  application_id         : # YOUR_APPLICATION_ID
+  index_name             : # YOUR_INDEX_NAME
+  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
+  powered_by             : # true (default), false
+google:
+  search_engine_id       : # YOUR_SEARCH_ENGINE_ID
+  instant_search         : # false (default), true
 # SEO Related
 google_site_verification :
 bing_site_verification   :
+naver_site_verification  :
 yandex_site_verification :
+baidu_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : "mmistakes"
+  username               :
 facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : "/assets/images/bio-photo.jpg"
+og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-    - https://twitter.com/
-    - https://github.com/
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "G-SN76BMMV4J"
+    anonymize_ip         : # true, false (default)
 
 
 # Site Author
 author:
   name             : "Minseo Kang"
-  avatar           : #"/assets/images/bio-photo.jpg"
-  bio              : "삶은 달걀이다."
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "삶은 달걀이다"
   location         : "Seoul, Korea"
-  email            : "2245001@office.ut.ac.kr"
-  
+  email            : "2245001@office.ut.ac.k"
   links:
-  - label: "School Email"
-    icon: "fas fa-fw fa-envelope-square"
-    url: "mailto:2245001@office.ut.ac.kr"
-
-  - label: "Google Mail"
-    icon: "fas fa-fw fa-envelope"
-    url: "mailto:hacloud60877@gmail.com"
-
-  - label: "GitHub"
-    icon: "fab fa-fw fa-github"
-    url: "https://github.com/Min-cloud0421/Min-cloud0421.github.io"
-
-  - label: "Instagram"
-    icon: "fab fa-fw fa-instagram"
-    url: "https://instagram.com/ms_b612"
-
+    - label: "School Email"
+      icon: "fas fa-fw fa-envelope-square"
+      # url: "2245001@office.ut.ac.kr"
+    - label: "Google Mail"
+      icon: "fas fa-fw fa-link"
+      # url: "hacloud60877@gmail.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      # url: "https://twitter.com/"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url: "https://facebook.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Min-cloud0421"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      # url: "https://instagram.com/ms_b612"
 
 # Site Footer
 footer:
@@ -139,10 +153,6 @@ footer:
 
 
 # Reading Files
-include:
-  - .htaccess
-  - _pages
-  
 include:
   - .htaccess
   - _pages
@@ -203,14 +213,14 @@ kramdown:
 # Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Seoul
 
 
 # Plugins (previously gems:)
@@ -242,7 +252,7 @@ whitelist:
 #  - <base_path>/my-awesome-category/index.html ~> path: /
 category_archive:
   type: liquid
-  path: /categories/
+  path: /posts/
 tag_archive:
   type: liquid
   path: /tags/
@@ -259,14 +269,13 @@ tag_archive:
 #     tag: /tags/:name/
 
 
-
 # HTML Compression
 # - https://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
     envs: development
-    
+
 
 # Defaults
 defaults:
