@@ -5,36 +5,26 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-# Theme Settings
-#
-# Review documentation to determine if you should use `theme` or `remote_theme`
-# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
-
-# theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "catppuccin_latte", "catppuccin_mocha"
+theme                    : "minimal-mistakes-jekyll"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Site Title"
+title                    : "구름이의 개발자 노트"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+subtitle                 : "Development Test Site"
+name                     : "Min-cloud0421"
+description              : "컴퓨터공학과 대학생의 공부 기록"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+baseurl                  : "/test"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-breadcrumbs              : # true, false (default)
+logo                     : "/assets/images/apple-touch-icon.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : "Custom Title" # overrides the website title displayed in the masthead, use " " for no title
+# breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
-enable_copy_code_button  : # true, false (default)
-copyright                : # "copyright" name, defaults to site.title
-copyright_url            : # "copyright" URL, defaults to site.url
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "utterances", "giscus", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -54,101 +44,85 @@ comments:
     discussion_term      : # "pathname" (default), "url", "title", "og:title"
     reactions_enabled    : # '1' for enabled (default), '0' for disabled
     theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
-    strict               : # 1 for enabled, 0 for disabled (default)
-    input_position       : # "top", "bottom" # The comment input box will be placed above or below the comments
-    emit_metadata        : # 1 for enabled, 0 for disabled (default) # https://github.com/giscus/giscus/blob/main/ADVANCED-USAGE.md#imetadatamessage
-    lang                 : # "en" (default)
-    lazy                 : # true, false # Loading of the comments will be deferred until the user scrolls near the comments container.
   staticman:
     branch               : # "master"
     endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
-reCaptcha:
-  siteKey                :
-  secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-  hide                   : # true, false (default)
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
-search_provider          : # lunr (default), algolia, google
+search                   : true # true, false (default)
+search_full_content      : true # true, false (default)
+search_provider          : "lunr"
 lunr:
-  search_within_pages    : # true, false (default)
+  search_within_pages    : true
 algolia:
-  application_id         : # YOUR_APPLICATION_ID
-  index_name             : # YOUR_INDEX_NAME
-  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : # true (default), false
-google:
-  search_engine_id       : # YOUR_SEARCH_ENGINE_ID
-  instant_search         : # false (default), true
+  application_id         : "QB6HVGBSBA"
+  index_name             : "dev_minimal-mistakes"
+  search_only_api_key    : "9d5014e5bbc77372547bce778dfa5663"
+  powered_by             : true
+
 # SEO Related
 google_site_verification :
 bing_site_verification   :
-naver_site_verification  :
 yandex_site_verification :
-baidu_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "mmistakes"
 facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
-og_image_alt             : # Alt text for Open Graph/Twitter default site image
+og_image                 : "/assets/images/bio-photo.jpg"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+    - https://twitter.com/
+    - https://github.com/
 
 # Analytics
 analytics:
-  provider               : # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
     tracking_id          :
-    anonymize_ip         : # true, false (default)
 
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
-  # fediverse      : "@you@instance.social"  # used for fediverse:creator meta tag
+  name             : "Minseo Kang"
+  avatar           : #"/assets/images/bio-photo.jpg"
+  bio              : "삶은 달걀이다."
+  location         : "Seoul, Korea"
+  email            : "2245001@office.ut.ac.kr"
+  
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-square-envelope"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-square-x-twitter"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-square-facebook"
-      # url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+  - label: "School Email"
+    icon: "fas fa-fw fa-envelope-square"
+    url: "mailto:2245001@office.ut.ac.kr"
+
+  - label: "Google Mail"
+    icon: "fas fa-fw fa-envelope"
+    url: "mailto:hacloud60877@gmail.com"
+
+  - label: "GitHub"
+    icon: "fab fa-fw fa-github"
+    url: "https://github.com/Min-cloud0421/Min-cloud0421.github.io"
+
+  - label: "Instagram"
+    icon: "fab fa-fw fa-instagram"
+    url: "https://instagram.com/ms_b612"
+
 
 # Site Footer
 footer:
   links:
     - label: "Twitter"
-      icon: "fab fa-fw fa-square-x-twitter"
+      icon: "fab fa-fw fa-twitter-square"
       # url:
-      # rel: "me"  # optional: adds rel attribute (e.g. for IndieWeb web sign-in)
     - label: "Facebook"
-      icon: "fab fa-fw fa-square-facebook"
+      icon: "fab fa-fw fa-facebook-square"
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -162,10 +136,13 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
-  since: "2013"
 
 
 # Reading Files
+include:
+  - .htaccess
+  - _pages
+  
 include:
   - .htaccess
   - _pages
@@ -188,7 +165,6 @@ exclude:
   - gulpfile.js
   - LICENSE
   - log
-  - minimal-mistakes-jekyll.gemspec
   - node_modules
   - package.json
   - package-lock.json
@@ -227,38 +203,14 @@ kramdown:
 # Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 
 # Outputting
 permalink: /:categories/:title/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-
-# Pagination with jekyll-paginate
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-
-# Pagination with jekyll-paginate-v2
-# See https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
-#   for configuration details
-pagination:
-  # Set enabled to true to use paginate v2
-  # enabled: true
-  debug: false
-  collection: 'posts'
-  per_page: 10
-  permalink: '/page/:num/'
-  title: ':title - page :num'
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
-  category: 'posts'
-  tag: ''
-  locale: ''
-  trail:
-    before: 2
-    after: 2
+timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
@@ -294,7 +246,6 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-# show_taxonomy: false  # set to false to hide tag/category lists on posts
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
@@ -308,13 +259,14 @@ tag_archive:
 #     tag: /tags/:name/
 
 
+
 # HTML Compression
 # - https://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
     envs: development
-
+    
 
 # Defaults
 defaults:
@@ -325,8 +277,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: # true
-      share: true
+      share: false
       related: true
-
