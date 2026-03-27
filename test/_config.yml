@@ -91,20 +91,28 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  name             : "Minseo Kang"
+  avatar           : #"/assets/images/bio-photo.jpg"
+  bio              : "삶은 달걀이다."
+  location         : "Seoul, Korea"
+  email            : "2245001@office.ut.ac.kr"
+  
   links:
-    - label: "Your Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://your-site.com"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+  - label: "School Email"
+    icon: "fas fa-fw fa-envelope-square"
+    url: "mailto:2245001@office.ut.ac.kr"
+
+  - label: "Google Mail"
+    icon: "fas fa-fw fa-envelope"
+    url: "mailto:hacloud60877@gmail.com"
+
+  - label: "GitHub"
+    icon: "fab fa-fw fa-github"
+    url: "https://github.com/Min-cloud0421/Min-cloud0421.github.io"
+
+  - label: "Instagram"
+    icon: "fab fa-fw fa-instagram"
+    url: "https://instagram.com/ms_b612"
 
 
 # Site Footer
@@ -112,17 +120,29 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      # url:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      # url:
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      # url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
-  since: "2013"
+      # url:
 
 
 # Reading Files
+include:
+  - .htaccess
+  - _pages
+  
 include:
   - .htaccess
   - _pages
@@ -147,19 +167,18 @@ exclude:
   - log
   - node_modules
   - package.json
+  - package-lock.json
   - Rakefile
   - README
   - tmp
+  - /docs # ignore Minimal Mistakes /docs
+  - /test # ignore Minimal Mistakes /test
 keep_files:
   - .git
   - .svn
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-# Liquid
-strict_front_matter: true
-liquid:
-  error_mode: strict
 
 # Conversion
 markdown: kramdown
@@ -240,26 +259,14 @@ tag_archive:
 #     tag: /tags/:name/
 
 
+
 # HTML Compression
-# - http://jch.penibelst.de/
+# - https://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
     envs: development
-
-
-# Collections
-collections:
-  recipes:
-    output: true
-    permalink: /:collection/:path/
-  pets:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-
+    
 
 # Defaults
 defaults:
@@ -270,37 +277,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
-      share: true
+      read_time: false
+      comments: # true
+      share: false
       related: true
-  # _pages
-  - scope:
-      path: "_pages"
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-  # _recipes
-  - scope:
-      path: ""
-      type: recipes
-    values:
-      layout: single
-      author_profile: true
-      share: true
-  # _pets
-  - scope:
-      path: ""
-      type: pets
-    values:
-      layout: single
-      author_profile: true
-      share: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: false
-      share: true
